@@ -1,4 +1,17 @@
+@use '../utils/mixins' as *;
+@use '../utils/vars' as *;
+
 .header {
-  background-color: black;
+  background-color: burlywood;
+  background-image: url(../images/photos/Image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   min-height: 100vh;
+  padding: 0 20px;
+  @include grid;
+
+  &__title {
+    margin-bottom: 40px;
+  }
 }

@@ -8,4 +8,8 @@
   letter-spacing: 0;
   vertical-align: middle;
   color: rgba(255, 255, 255, 1);
+
+  grid-template-rows: 1fr 1fr;
+  grid-area: 2/1/3/3;
+  align-self: end;
 }
