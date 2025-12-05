@@ -1,3 +1,5 @@
+@use './utils/extends';
+
 h1 {
   @extend %h1;
 }
