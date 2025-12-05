@@ -1,9 +1,13 @@
 @use './utils/extends' as *;
 
+:root {
+  font-family: Manrope, sans-serif;
+}
+
 h1 {
   @extend %h1;
 }
 
-:root {
-  font-family: Manrope, sans-serif;
+h2 {
+  @extend %h2;
 }
