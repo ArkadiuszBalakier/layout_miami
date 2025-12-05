@@ -16,5 +16,14 @@
     max-width: 100%;
     height: auto;
     display: block;
+    padding-bottom: 24px;
+  }
+
+  &__product-name {
+    padding-bottom: 8px;
+  }
+
+  &__description {
+    padding-bottom: 12px;
   }
 }

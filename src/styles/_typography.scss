@@ -2,6 +2,16 @@
 
 :root {
   font-family: Manrope, sans-serif;
+  font-size: 16px;
+  line-height: 140%;
+  font-weight: 400;
+  letter-spacing: 0.15px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 h1 {
@@ -10,4 +20,8 @@ h1 {
 
 h2 {
   @extend %h2;
+}
+
+h3 {
+  @extend %h3;
 }

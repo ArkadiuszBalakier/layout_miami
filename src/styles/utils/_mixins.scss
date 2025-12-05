@@ -12,6 +12,7 @@
 
 @mixin grid {
   display: grid;
-  grid-template-columns: 130px 130px;
+  grid-template-columns: repeat(2, 130px);
   gap: 20px;
+  justify-content: center;
 }

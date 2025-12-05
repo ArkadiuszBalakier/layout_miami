@@ -1,6 +1,6 @@
 %h1 {
-  font-family: Manrope, sans-serif;
   font-weight: 400;
+  line-height: 100%;
 }
 
 %h2 {
@@ -8,5 +8,18 @@
   line-height: 32px;
   letter-spacing: 0;
   font-weight: 700;
-  font-style: Bold;
+}
+
+%h3 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 140%;
+  letter-spacing: 0;
+}
+
+%h4 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0;
 }
