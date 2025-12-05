@@ -1,12 +1,11 @@
 .navigation {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  place-items: center center;
+  place-items: center;
   align-self: start;
   padding-top: 24px;
 
-  grid-area: 1/1/2/-1;
+  grid-area: 1 / 1 / 2 / -1;
 
   &__content-wrapper {
     display: flex;
