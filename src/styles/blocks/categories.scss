@@ -1,7 +1,8 @@
 @use '../utils/mixins' as *;
 
 .categories {
-  .category {
+  &__category-name {
+    padding-top: 16px;
     padding-bottom: 40px;
   }
 }
