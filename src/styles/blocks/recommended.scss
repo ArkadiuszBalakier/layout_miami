@@ -1,8 +1,9 @@
 @use '../utils/mixins' as *;
 
 .recommended {
-  @include grid;
-
+  &__items {
+    @include grid;
+  }
   justify-content: center;
   padding-bottom: 96px;
 }
