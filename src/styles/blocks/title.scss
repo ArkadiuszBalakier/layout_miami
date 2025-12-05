@@ -1,11 +1,11 @@
+@use '../utils/mixins' as *;
+
 .title {
-  font-family: Manrope;
-  font-weight: 700;
-  font-style: Bold;
+  @include font-heading-bold;
+
   font-size: 36px;
   line-height: 100%;
-  letter-spacing: 0px;
+  letter-spacing: 0;
   vertical-align: middle;
-  background-color: black;
   color: rgba(255, 255, 255, 1);
 }

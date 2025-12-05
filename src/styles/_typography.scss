@@ -1,5 +1,9 @@
-@use './utils/extends';
+@use './utils/extends' as *;
 
 h1 {
   @extend %h1;
+}
+
+:root {
+  font-family: Manrope, sans-serif;
 }

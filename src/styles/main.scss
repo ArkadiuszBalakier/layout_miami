@@ -1,5 +1,5 @@
 @use './utils/reset';
-@use 'utils';
-@use 'typography';
-
+@use './utils';
+@use './typography';
 @use './blocks/title.scss';
+@use './blocks/header.scss';
