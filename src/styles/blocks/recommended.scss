@@ -1,0 +1,7 @@
+@use '../utils/mixins' as *;
+
+.recommended {
+  @include grid;
+
+  justify-content: center;
+}
