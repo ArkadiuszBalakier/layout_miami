@@ -8,7 +8,7 @@
     width: 100%;
     background-color: $form-bg-color;
     border-radius: 8px;
-    border: none;
+    border: 1px solid transparent;
     padding: 14px 16px;
     font-size: 14px;
   }
@@ -16,14 +16,43 @@
   &__input {
     margin-bottom: 16px;
 
-    :hover {
+    &::placeholder {
+      font-family: Manrope;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 140%;
+      letter-spacing: 0.15px;
+      transition: color 0.2s;
+    }
+
+    &:hover {
+      border: 1px solid rgba(219, 219, 219, 1);
+      box-shadow: none;
+    }
+
+    &:hover::placeholder {
       color: $text-color-primary;
+    }
+
+    &:focus {
+      outline: none;
+      -webkit-tap-highlight-color: transparent;
+      appearance: none;
+      -webkit-appearance: none;
+      box-shadow: 0 0 0 2px $buttton-color-primary;
     }
   }
 
   &__textarea {
     margin-bottom: 32px;
     resize: none;
+
+    &:focus {
+      outline: none;
+      -webkit-tap-highlight-color: transparent;
+      appearance: none;
+      -webkit-appearance: none;
+    }
   }
 
   &__label {
