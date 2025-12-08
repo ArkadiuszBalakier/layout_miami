@@ -15,6 +15,10 @@
 
   &__input {
     margin-bottom: 16px;
+
+    :hover {
+      color: $text-color-primary;
+    }
   }
 
   &__textarea {

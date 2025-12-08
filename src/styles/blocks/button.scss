@@ -19,5 +19,10 @@
 
   &:hover {
     cursor: pointer;
+    background-color: $buttton-color-secondary;
+  }
+
+  &:active {
+    background-color: $button-color-pressed;
   }
 }
