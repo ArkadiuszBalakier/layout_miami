@@ -1,0 +1,18 @@
+@use '../utils/vars' as *;
+
+.button {
+  font-family: Manrope;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 16px;
+  line-height: 27px;
+  letter-spacing: 0px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  background-color: $buttton-color-primary;
+  border-radius: 8px;
+  padding: 15px 0;
+  width: 100%;
+  display: inline-block;
+}
