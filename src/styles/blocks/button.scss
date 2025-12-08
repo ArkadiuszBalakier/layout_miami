@@ -16,4 +16,8 @@
   width: 100%;
   display: inline-block;
   border: none;
+
+  &:hover {
+    cursor: pointer;
+  }
 }

@@ -1,0 +1,36 @@
+@use '../utils/vars' as *;
+
+.contact-form {
+  margin-bottom: 48px;
+
+  &__input,
+  &__textarea {
+    width: 100%;
+    background-color: $form-bg-color;
+    border-radius: 8px;
+    border: none;
+    padding: 14px 16px;
+    font-size: 14px;
+  }
+
+  &__input {
+    margin-bottom: 16px;
+  }
+
+  &__textarea {
+    margin-bottom: 32px;
+    resize: none;
+  }
+
+  &__label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+}
