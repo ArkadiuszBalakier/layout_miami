@@ -3,6 +3,7 @@
 .menu {
   background-color: $form-bg-color;
   padding-left: 20px;
+  min-height: 100vh;
 
   &__nav {
     padding: 28px 0;
@@ -14,5 +15,31 @@
 
   &__img-container {
     width: 100%;
+  }
+
+  &__paragraph {
+    font-family: Manrope, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 2px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    padding-bottom: 16px;
+  }
+
+  &__call-link {
+    display: inline-block;
+    color: $buttton-color-secondary;
+    font-family: Manrope;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 2px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-bottom: 1px solid $buttton-color-secondary;
+    padding-bottom: 4px;
   }
 }
