@@ -2,11 +2,14 @@
 
 .menu {
   background-color: $form-bg-color;
+  padding-left: 20px;
 
   &__nav {
-    padding: 28px 20px;
+    padding: 28px 0;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    margin-bottom: 32px;
   }
 
   &__img-container {
