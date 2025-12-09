@@ -2,4 +2,14 @@
 
 .menu {
   background-color: $form-bg-color;
+
+  &__nav {
+    padding: 28px 20px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__img-container {
+    width: 100%;
+  }
 }
