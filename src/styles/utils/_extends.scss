@@ -5,11 +5,11 @@
   line-height: 100%;
   font-size: 36px;
 
-  @include for-tablets() {
+  @include for-tablets {
     font-size: 48px;
   }
 
-  @include for-desktop() {
+  @include for-desktop {
     font-size: 56px;
   }
 }
@@ -20,11 +20,11 @@
   letter-spacing: 0;
   font-weight: 700;
 
-  @include for-tablets() {
+  @include for-tablets {
     font-size: 40px;
   }
 
-  @include for-desktop() {
+  @include for-desktop {
     font-size: 48px;
   }
 }

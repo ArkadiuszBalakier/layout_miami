@@ -27,7 +27,7 @@
     gap: 24px;
   }
 
-  @include for-desktop() {
+  @include for-desktop {
     grid-template-columns: repeat(12, 1fr);
     gap: 24px;
   }

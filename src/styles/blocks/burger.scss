@@ -29,6 +29,6 @@
   }
 
   &__label {
-    @include visiually-hidden();
+    @include visiually-hidden;
   }
 }
