@@ -8,15 +8,16 @@
 
   &__img-container {
     width: 100%;
-    height: auto;
-    text-align: center;
+    position: relative;
+    padding-top: 100%;
   }
 
   &__img {
+    top: 0;
     max-width: 100%;
-    height: auto;
-    display: block;
-    padding-bottom: 24px;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
   }
 
   &__product-name {

@@ -10,8 +10,25 @@
   font-style: Bold;
 }
 
+@mixin for-desktopn() {
+  @media (min-width: 1260px) {
+    @content;
+  }
+}
+
+@mixin for-tablets() {
+  @media (min-width: 744px) {
+    @content;
+  }
+}
+
 @mixin grid {
   display: grid;
-  grid-template-columns: repeat(2, 130px);
+  grid-template-columns: 1fr 1fr;
   gap: 20px;
+
+  @include for-tablets() {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 24px;
+  }
 }
