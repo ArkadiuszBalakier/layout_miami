@@ -7,6 +7,10 @@
     padding: 0 76px;
   }
 
+  @include for-desktop {
+    padding: 0 120px;
+  }
+
   h2 {
     margin-bottom: 48px;
   }
