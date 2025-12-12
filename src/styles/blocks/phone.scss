@@ -1,0 +1,24 @@
+@use '../utils/vars' as *;
+@use '../utils/mixins' as *;
+
+.phone {
+  display: flex;
+  align-items: center;
+  &__label {
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 2px;
+    text-align: right;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: $text-color-primary;
+    position: absolute;
+    transform: translateX(calc(-100% - 20px));
+  }
+
+  &:not(:hover) .phone__label {
+    @include visiually-hidden();
+  }
+}
