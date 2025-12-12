@@ -10,6 +10,12 @@
     height: auto;
     width: 100%;
     display: block;
+
+    @include for-desktop {
+      object-fit: cover;
+      object-position: center;
+      height: clamp(460px, 36.5vw, 800px);
+    }
   }
 
   &__content-container {
@@ -26,6 +32,10 @@
 
   &__title {
     grid-column: 1/4;
+
+    @include for-desktop {
+      grid-column: 1 / span 6;
+    }
   }
 
   &__content {
@@ -33,5 +43,9 @@
     line-height: 140%;
     letter-spacing: 0.15px;
     grid-column: 4/-1;
+
+    @include for-desktop {
+      grid-column: auto / span 6;
+    }
   }
 }

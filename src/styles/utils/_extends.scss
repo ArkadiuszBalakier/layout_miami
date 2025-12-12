@@ -7,7 +7,6 @@
 
   @include for-tablets {
     font-size: 48px;
-    letter-spacing: 1px;
   }
 
   @include for-desktop {
@@ -17,7 +16,7 @@
 
 %h2 {
   font-size: 32px;
-  line-height: 32px;
+  line-height: 100%;
   letter-spacing: 0;
   font-weight: 700;
 
