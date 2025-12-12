@@ -15,8 +15,9 @@
   &__content-container {
     padding: 48px 20px;
 
-    @include for-tablets() {
+    @include for-tablets {
       padding: 120px 76px;
+
       @include grid;
     }
 

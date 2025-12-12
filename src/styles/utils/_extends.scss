@@ -11,7 +11,8 @@
   line-height: 32px;
   letter-spacing: 0;
   font-weight: 700;
-  @include for-tablets() {
+
+  @include for-tablets {
     font-size: 40px;
   }
 }
