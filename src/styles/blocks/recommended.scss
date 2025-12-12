@@ -5,6 +5,14 @@
     @include grid;
   }
 
+  &__item {
+    grid-column: 1/-1;
+
+    @include for-desktop {
+      grid-column: span 4;
+    }
+  }
+
   justify-content: center;
   padding-bottom: 96px;
 }
