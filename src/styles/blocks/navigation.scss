@@ -9,6 +9,11 @@
 
   &__content-wrapper {
     display: flex;
+    align-items: center;
     gap: 24px;
+  }
+
+  &__call-number {
+    visibility: hidden;
   }
 }

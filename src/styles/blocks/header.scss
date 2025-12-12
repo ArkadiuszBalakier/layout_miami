@@ -15,6 +15,10 @@
     padding: 0 72px;
   }
 
+  @include for-desktop {
+    padding: 0 120px;
+  }
+
   @include grid;
 
   grid-template-rows: 1fr 1fr;
@@ -31,6 +35,10 @@
       grid-column: 1/4;
       grid-row: 2/-1;
       align-self: end;
+    }
+
+    @include for-desktop {
+      grid-column: 1/7;
     }
   }
 }

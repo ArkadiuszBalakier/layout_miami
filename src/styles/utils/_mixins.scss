@@ -5,18 +5,13 @@
   }
 }
 
-@mixin font-heading-bold {
-  font-weight: 700;
-  font-style: Bold;
-}
-
-@mixin for-desktop() {
+@mixin for-desktop {
   @media (min-width: 1260px) {
     @content;
   }
 }
 
-@mixin for-tablets() {
+@mixin for-tablets {
   @media (min-width: 744px) {
     @content;
   }
@@ -31,4 +26,19 @@
     grid-template-columns: repeat(6, 1fr);
     gap: 24px;
   }
+
+  @include for-desktop() {
+    grid-template-columns: repeat(12, 1fr);
+    gap: 24px;
+  }
+}
+
+@mixin visiually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }

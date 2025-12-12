@@ -1,9 +1,17 @@
 @use './mixins' as *;
 
 %h1 {
-  font-weight: 400;
+  font-weight: 700;
   line-height: 100%;
   font-size: 36px;
+
+  @include for-tablets() {
+    font-size: 48px;
+  }
+
+  @include for-desktop() {
+    font-size: 56px;
+  }
 }
 
 %h2 {
@@ -12,8 +20,12 @@
   letter-spacing: 0;
   font-weight: 700;
 
-  @include for-tablets {
+  @include for-tablets() {
     font-size: 40px;
+  }
+
+  @include for-desktop() {
+    font-size: 48px;
   }
 }
 
