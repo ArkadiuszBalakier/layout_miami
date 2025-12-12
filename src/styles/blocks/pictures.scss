@@ -7,6 +7,10 @@
     width: 100%;
     position: relative;
     padding-top: 100%;
+
+    @include for-tablets() {
+      grid-column: span 3;
+    }
   }
 
   &__img {

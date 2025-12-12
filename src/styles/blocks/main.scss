@@ -1,5 +1,11 @@
+@use '../utils/mixins' as *;
+
 .main {
   padding: 0 20px;
+  @include for-tablets() {
+    padding: 0 76px;
+  }
+
   h2 {
     margin-bottom: 48px;
   }

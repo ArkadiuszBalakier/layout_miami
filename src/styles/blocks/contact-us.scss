@@ -1,7 +1,11 @@
 @use '../utils/vars' as *;
+@use '../utils/mixins' as *;
 
 .contact-us {
   padding: 64px 20px;
+  @include for-tablets() {
+    padding: 120px 76px;
+  }
 
   &__address-info {
     font-style: normal;

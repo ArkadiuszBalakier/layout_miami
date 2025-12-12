@@ -1,4 +1,5 @@
 @use '../utils/vars' as *;
+@use '../utils/mixins' as *;
 
 .legacy {
   &__img-container {
@@ -13,12 +14,23 @@
 
   &__content-container {
     padding: 48px 20px;
+
+    @include for-tablets() {
+      padding: 120px 76px;
+      @include grid;
+    }
+
     background-color: $bg-color-secondary;
+  }
+
+  &__title {
+    grid-column: 1/4;
   }
 
   &__content {
     padding-top: 24px;
     line-height: 140%;
     letter-spacing: 0.15px;
+    grid-column: 4/-1;
   }
 }
