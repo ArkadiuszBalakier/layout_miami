@@ -4,6 +4,8 @@
 .phone {
   display: flex;
   align-items: center;
+  text-decoration: none;
+  color: $text-color-primary;
   &__label {
     font-family: Inter, sans-serif;
     font-weight: 700;
@@ -13,9 +15,15 @@
     text-align: right;
     vertical-align: middle;
     text-transform: uppercase;
-    color: $text-color-primary;
     position: absolute;
     transform: translateX(calc(-100% - 20px));
+    color: inherit;
+    transition: color 0.3s ease-in-out;
+  }
+
+  &:hover {
+    cursor: pointer;
+    color: $button-color-primary;
   }
 
   &:not(:hover) .phone__label {

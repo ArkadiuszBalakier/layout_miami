@@ -11,7 +11,7 @@
   background-color: $form-bg-color;
   min-height: 100vh;
   z-index: 100;
-  overflow: hidden;
+  overflow-y: hidden;
 
   @include padding;
 
@@ -44,7 +44,7 @@
 
   &__call-link {
     display: inline-block;
-    color: $buttton-color-secondary;
+    color: $button-color-secondary;
     font-family: Manrope, sans-serif;
     font-weight: 700;
     font-size: 16px;
@@ -53,7 +53,11 @@
     vertical-align: middle;
     text-transform: uppercase;
     text-decoration: none;
-    border-bottom: 1px solid $buttton-color-secondary;
+    border-bottom: 1px solid $button-color-secondary;
     padding-bottom: 4px;
+  }
+
+  :has(&__call-link:hover) &__paragraph {
+    color: $button-color-primary;
   }
 }

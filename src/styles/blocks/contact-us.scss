@@ -46,9 +46,20 @@
   &__info-value {
     text-decoration: none;
     color: $text-color-primary;
+
+    &:hover {
+      color: $button-color-primary;
+    }
   }
 
   &__address {
     line-height: 140%;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+
+    &:hover {
+      color: $button-color-primary;
+    }
   }
 }
