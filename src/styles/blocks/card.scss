@@ -17,6 +17,11 @@
     height: 100%;
     position: absolute;
     object-fit: cover;
+    padding-bottom: 16px;
+
+    @include for-tablets {
+      padding-bottom: 24px;
+    }
   }
 
   &__product-name {

@@ -10,6 +10,10 @@
     padding: 120px 76px;
   }
 
+  @include for-desktop {
+    padding: 120px 120px;
+  }
+
   &__address-info {
     font-style: normal;
 

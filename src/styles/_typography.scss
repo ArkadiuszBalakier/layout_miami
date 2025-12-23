@@ -1,5 +1,6 @@
 @use './utils/extends' as *;
 @use './utils/vars' as *;
+@use './utils/mixins' as *;
 
 :root {
   font-family: Manrope, sans-serif;
@@ -33,4 +34,24 @@ h2 {
 
 h3 {
   @extend %h3;
+}
+
+.tablet-break {
+  display: inline;
+
+  @include for-tablets {
+    display: block;
+  }
+
+  @include for-desktop {
+    display: inline;
+  }
+}
+
+.desktop-break {
+  display: inline;
+
+  @include for-desktop {
+    display: block;
+  }
 }

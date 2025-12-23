@@ -21,6 +21,12 @@
     />
     <title>Miami</title>
     <link
+      rel="icon"
+      type="image/png"
+      href="src/images/favicon/Favicon.png"
+      sizes="32x32"
+    />
+    <link
       rel="stylesheet"
       href="src/styles/main.scss"
     />
@@ -294,7 +300,15 @@
         />
       </div>
       <div class="legacy__content-container">
-        <h2 class="legacy__title">Timeless, for 50 years and counting</h2>
+        <h2 class="legacy__title">
+          Timeless, for
+          <span class="tablet-break"></span>
+          50
+          <span class="desktop-break"></span>
+          years and
+          <span class="tablet-break"></span>
+          counting
+        </h2>
         <p class="legacy__content">
           Bang & Olufsen is expanding its Recreated Classics Program with the
           launch of Beosystems – a limited edition music system that transcends
@@ -312,7 +326,7 @@
 
       <form
         class="contact-form contact-us__form"
-        onsubmit="false"
+        onsubmit="event.preventDefault()"
       >
         <div class="contact-form__group">
           <label

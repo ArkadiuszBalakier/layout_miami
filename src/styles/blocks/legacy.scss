@@ -27,11 +27,19 @@
       @include grid;
     }
 
+    @include for-desktop {
+      padding: 120px 120px;
+    }
+
     background-color: $bg-color-secondary;
   }
 
   &__title {
     grid-column: 1/4;
+
+    @include for-tablets {
+      grid-column: 1 / span 3;
+    }
 
     @include for-desktop {
       grid-column: 1 / span 6;
@@ -44,8 +52,14 @@
     letter-spacing: 0.15px;
     grid-column: 4/-1;
 
+    @include for-tablets {
+      grid-column: auto / span 3;
+      padding-top: 0;
+    }
+
     @include for-desktop {
-      grid-column: auto / span 6;
+      grid-column: 8 / -1;
+      padding-top: 0;
     }
   }
 }
