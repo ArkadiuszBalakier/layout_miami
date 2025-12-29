@@ -157,8 +157,8 @@
         class="recommended"
         id="recommended"
       >
-        <h2>Recommended</h2>
         <div class="recommended__items">
+          <h2 class="recommended__title">Recommended</h2>
           <div class="card recommended__item">
             <div class="card__img-container">
               <img
@@ -378,13 +378,24 @@
             required
           ></textarea>
         </div>
-
-        <button
-          type="submit"
-          class="contact-form__submit button contact-us__button"
+        <label
+          for="form-trigger"
+          class="contact-form__submit-container"
         >
-          Send Message
-        </button>
+          <span
+            type="submit"
+            class="contact-form__submit button contact-us__button"
+          >
+            Send Message
+          </span>
+        </label>
+        <input
+          type="checkbox"
+          id="form-trigger"
+          class="contact-form__checkbox-trigger"
+          hidden
+        />
+        <p class="contact-form__success-msg">Message sent successfully!</p>
       </form>
       <address class="contact-us__address-info">
         <div class="contact-us__info-group">

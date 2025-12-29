@@ -3,6 +3,7 @@
 .contact-form {
   margin-bottom: 48px;
   color: $text-color-secondary;
+  position: relative;
   &__input,
   &__textarea {
     width: 100%;
@@ -65,5 +66,24 @@
     clip: rect(0, 0, 0, 0);
     white-space: nowrap;
     border-width: 0;
+  }
+
+  &__success-msg {
+    display: none;
+    color: #2e7d32;
+    background: #e8f5e9;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 4px;
+    text-align: center;
+    grid-column: 1 / -1;
+  }
+
+  &__checkbox-trigger {
+    display: none;
+
+    &:checked ~ .contact-form__success-msg {
+      display: block;
+    }
   }
 }
