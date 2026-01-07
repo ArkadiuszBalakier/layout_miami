@@ -324,10 +324,7 @@
     >
       <h2 class="contact-us__title">Contact us</h2>
 
-      <form
-        class="contact-form contact-us__form"
-        onsubmit="event.preventDefault()"
-      >
+      <form class="contact-form contact-us__form">
         <div class="contact-form__group">
           <label
             for="name"
@@ -378,23 +375,12 @@
             required
           ></textarea>
         </div>
-        <label
-          for="form-trigger"
-          class="contact-form__submit-container"
+        <button
+          type="submit"
+          class="contact-form__submit button contact-us__button"
         >
-          <span
-            type="submit"
-            class="contact-form__submit button contact-us__button"
-          >
-            Send Message
-          </span>
-        </label>
-        <input
-          type="checkbox"
-          id="form-trigger"
-          class="contact-form__checkbox-trigger"
-          hidden
-        />
+          Send Message
+        </button>
         <p class="contact-form__success-msg">Message sent successfully!</p>
       </form>
       <address class="contact-us__address-info">

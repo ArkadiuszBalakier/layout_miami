@@ -76,13 +76,8 @@
     margin-top: 15px;
     border-radius: 4px;
     text-align: center;
-    grid-column: 1 / -1;
-  }
 
-  &__checkbox-trigger {
-    display: none;
-
-    &:checked ~ .contact-form__success-msg {
+    &.is-visible {
       display: block;
     }
   }

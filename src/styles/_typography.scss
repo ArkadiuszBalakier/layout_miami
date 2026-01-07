@@ -12,7 +12,7 @@
 
 html {
   color: $text-color-primary;
-
+  scroll-behavior: smooth;
   &:has([id='menu']:target) {
     overflow: hidden;
   }
